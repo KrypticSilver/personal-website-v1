@@ -9,7 +9,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #5d4954;
 }
 
@@ -22,7 +22,7 @@ nav {
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 30%;
 }
 
@@ -98,7 +98,7 @@ nav {
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg translate(-5px, 6px));
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
@@ -106,5 +106,5 @@ nav {
 }
 
 .toggle .line3 {
-    transform: rotate(45deg translate(-5px, 6px));
+    transform: rotate(45deg) translate(-5px, -6px);
 }
