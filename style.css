@@ -8,13 +8,18 @@ html {
   font-size: 62.5%;
 }
 
-:after {
-  content: "";
+#title-section {
+  text-align: center;
+  padding: 3rem 0rem;
+  width: 100%;
+  background-color: #00818a;
+  border: solid 2px white;
+  position: fixed;
 }
 
-section {
-  position: relative;
-  left: 100px;
+#title-section h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -25,12 +30,14 @@ body {
   background: #292d3e;
   color: white;
   font-family: "Montserrat", sans-serif;
+  height: 1000px;
 }
 
 nav {
-  padding: 10rem 0rem;
+  padding: 15rem 0rem;
   display: grid;
   font-size: 10px;
+  position: fixed;
 }
 
 nav ul {
@@ -49,10 +56,10 @@ nav ul li {
   text-transform: uppercase;
   transition: all 0.4s ease-out;
   border: solid 2px white;
-  margin: 1.5px 0px;
+  margin: 1px 0px;
 }
 
-nav ul li:after {
+nav ul li::after {
   position: absolute;
   background: white;
   color: #00818a;
@@ -66,20 +73,20 @@ nav ul li:after {
   border: solid 2px #00818a;
 }
 
-nav ul li:nth-child(1):after {
+#about-me-button::after {
   content: "about me";
   line-height: 70px;
 }
-nav ul li:nth-child(2):after {
+#experience-button::after {
   content: "experience";
   line-height: 70px;
 }
-nav ul li:nth-child(3):after {
+#projects-button::after {
   content: "projects";
   line-height: 70px;
 }
-nav ul li:nth-child(4):after {
-  content: "say hi";
+#contact-button::after {
+  content: "say hi!";
   line-height: 70px;
 }
 
@@ -90,4 +97,10 @@ nav ul li:hover {
 nav ul li:hover:after {
   opacity: 1;
   transform: perspective(400px) rotateY(0deg) scale(1);
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+  margin: 17px;
 }
